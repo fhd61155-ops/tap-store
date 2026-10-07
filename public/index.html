@@ -26,7 +26,7 @@
                             hover: '#2b2d3d'
                         },
                         brand: {
-                            purple: '#8b5cf6',
+                            purple: '#10b981',
                             cyan: '#06b6d4',
                             gold: '#f59e0b',
                             diamond: '#3b82f6'
@@ -36,7 +36,7 @@
                         cairo: ['Cairo', 'sans-serif']
                     },
                     boxShadow: {
-                        'neon-purple': '0 0 25px rgba(139, 92, 246, 0.4)',
+                        
                         'neon-gold': '0 0 25px rgba(245, 158, 11, 0.4)',
                         'neon-cyan': '0 0 25px rgba(6, 182, 212, 0.4)',
                         'neon-emerald': '0 0 25px rgba(16, 185, 129, 0.4)'
@@ -64,8 +64,7 @@
     firebase.initializeApp(window.firebaseConfig);
   }
 
-  // رابط Webhook الديسكورد
-  window.WEBHOOK_URL = "https://discord.com/api/webhooks/1555958444652232795/PY1rRIAVd-IJWAntfj4zlrTzTlQ7QFeqPZUp4Bdx9lMbR8X8ajprCSWT6mUq3PGWwZVQ";
+ 
 </script>
     
     <style>
@@ -76,12 +75,12 @@
             overflow-x: hidden;
         }
         
-        .glow-bg-purple {
-            background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(0,0,0,0) 70%);
-        }
+        .glow-bg-emerald {
+    background: radial-gradient(circle, rgba(16,185,129,0.15) 0%, rgba(0,0,0,0) 70%);
+     } 
         
         .glow-bg-cyan {
-            background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, rgba(0,0,0,0) 70%);
+            background: radial-gradient(circle, rgba(16,185,129,0.15) 0%, rgba(0,0,0,0) 70%);
         }
 
         .glass-panel {
@@ -98,7 +97,7 @@
         }
 
         .animated-gradient-text {
-            background: linear-gradient(90deg, #a855f7, #6366f1, #3b82f6, #06b6d4, #a855f7);
+            background: linear-gradient(90deg, #10b981, #22c55e, #3b82f6, #06b6d4, #10b981);
             background-size: 200% auto;
             color: transparent;
             -webkit-background-clip: text;
@@ -132,17 +131,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
             <!-- Logo -->
-            <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-discord to-brand-purple flex items-center justify-center text-white text-2xl font-black shadow-neon-purple transform hover:scale-105 transition-transform duration-300">
-                    <i class="fa-brands font-bold fa-discord"></i>
-                </div>
-                <div>
-                    <span class="text-xl font-black tracking-wider text-white flex items-center gap-2">
-                متجر نكبه <span class="text-xs px-2 py-0.5 rounded-full bg-discord/20 text-discord border border-discord/30">nkb</span>
-                    </span>
-                    <p class="text-xs text-gray-400">متجر لبيع الباقات والاعلانات </p>
-                </div>
-            </div>
+<a href="/" class="flex items-center">
+    <div class="w-12 h-12 rounded-2xl overflow-hidden flex items-center justify-center">
+  <img src="/logo.gif" alt="شعار المتجر" class="w-full h-full object-cover">
+</div>
+</a>
 
             <!-- Nav Links -->
             <nav class="hidden md:flex items-center gap-6">
@@ -192,7 +185,7 @@
                     </div>
                 </div>
 
-                <a href="#ranks" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-discord to-brand-purple hover:from-discord-dark hover:to-purple-700 text-white text-xs font-bold shadow-neon-purple transition-all transform hover:-translate-y-0.5">
+                <a href="#ranks" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-discord to-emerald-500 hover:from-discord-dark hover:to-emerald-700 text-white text-xs font-bold shadow-neon-emerald transition-all transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-cart-shopping ml-1"></i> تصفح
                 </a>
             </div>
@@ -201,7 +194,7 @@
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div class="absolute inset-0 glow-bg-purple pointer-events-none"></div>
+        <div class="absolute inset-0 glow-bg-emerald pointer-events-none"></div>
         <div class="absolute top-1/3 left-10 w-96 h-96 glow-bg-cyan pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -214,7 +207,7 @@
 
             <!-- Title -->
             <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-white leading-tight mb-6">
-                ارتقِ بتجربتك وسيطر على <br>
+                ارتقِ بتجربتك وسيطر على <br><br>
                 <span class="animated-gradient-text">مجتمع الديسكورد الخاص بنا</span>
             </h1>
 
@@ -224,7 +217,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#ranks" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-discord via-brand-purple to-indigo-600 hover:brightness-110 text-white font-black text-lg shadow-neon-purple transition-all transform hover:-translate-y-1">
+                <a href="#ranks" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-discord via-emerald-500 to-indigo-600 hover:brightness-110 text-white font-black text-lg shadow-neon-emerald transition-all transform hover:-translate-y-1">
                     <i class="fa-solid fa-crown ml-2"></i> استعراض الرتب VIP
                 </a>
                
@@ -237,8 +230,8 @@
                     <h3 class="text-lg font-bold text-white">حفظ سحابي</h3>
                     <p class="text-xs text-gray-400">تخزين بياناتك بـ Firestore</p>
                 </div>
-                <div class="glass-panel p-4 rounded-2xl text-center border-purple-500/20">
-                    <i class="fa-solid fa-key text-2xl text-purple-400 mb-2"></i>
+                <div class="glass-panel p-4 rounded-2xl text-center border-emerald-500/20">
+                    <i class="fa-solid fa-key text-2xl text-emerald-400 mb-2"></i>
                     <h3 class="text-lg font-bold text-white">تحقق من الكود</h3>
                     <p class="text-xs text-gray-400">فحص فوري لصحة الكود</p>
                 </div>
@@ -277,7 +270,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
                 
                 <!-- Sponsor Rank Card (رتبة الراعي) -->
-                <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between border-gray-800 hover:border-discord/50 transition-all duration-300 relative group hover:shadow-neon-purple">
+                <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between border-gray-800 hover:border-discord/50 transition-all duration-300 relative group hover:shadow-neon-emerald">
                     <div class="absolute -top-4 right-8 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-black text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1">
                         <i class="fa-solid fa-star"></i> رتبة الداعمين
                     </div>
@@ -339,7 +332,7 @@
 
                 <!-- Content Creator Rank Card (رتبة صانع محتوى) -->
                 <div class="glass-panel-gold rounded-3xl p-8 flex flex-col justify-between border-amber-500/40 hover:border-amber-400 transition-all duration-300 relative group shadow-neon-gold">
-                    <div class="absolute -top-4 right-8 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-black text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1 animate-pulse">
+                    <div class="absolute -top-4 right-8 bg-gradient-to-r from-emerald-600 via-pink-600 to-amber-500 text-white font-black text-xs px-4 py-1.5 rounded-full shadow-lg flex items-center gap-1 animate-pulse">
                         <i class="fa-solid fa-fire"></i> الرتبة الأكثر طلباً للمبدعين
                     </div>
 
@@ -347,12 +340,12 @@
                         <!-- Header -->
                         <div class="flex items-center justify-between mb-6 pt-2">
                             <div class="flex items-center gap-4">
-                                <div class="w-16 h-16 rounded-2xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-300 text-3xl">
+                                <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-300 text-3xl">
                                     🎥
                                 </div>
                                 <div>
                                     <h3 class="text-2xl font-black text-white">رتبة صانع محتوى</h3>
-                                    <span class="text-xs text-purple-300 font-semibold">Content Creator Rank</span>
+                                    <span class="text-xs text-emerald-300 font-semibold">Content Creator Rank</span>
                                 </div>
                             </div>
                             <div class="text-left">
@@ -400,7 +393,7 @@
                         </div>
                     </div>
 
-                    <button onclick="openOrderModal('رتبة صانع محتوى', 150, 'rank')" class="w-full py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-purple-600 to-discord hover:brightness-110 text-white font-black text-base transition-all duration-300 shadow-neon-gold flex items-center justify-center gap-2">
+                    <button onclick="openOrderModal('رتبة صانع محتوى', 150, 'rank')" class="w-full py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-emerald-600 to-discord hover:brightness-110 text-white font-black text-base transition-all duration-300 shadow-neon-gold flex items-center justify-center gap-2">
                         <i class="fa-solid fa-bolt"></i> شراء رتبة صانع المحتوى ($150)
                     </button>
                 </div>
@@ -531,10 +524,10 @@
     <!-- Custom Requests Section -->
     <section id="custom" class="py-20 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="glass-panel rounded-3xl p-8 sm:p-12 border-purple-500/30 relative overflow-hidden">
+            <div class="glass-panel rounded-3xl p-8 sm:p-12 border-emerald-500/30 relative overflow-hidden">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-purple-500/20 text-purple-300 text-xs font-bold mb-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 text-xs font-bold mb-4">
                             <i class="fa-solid fa-sparkles"></i> طلبات مفصلة على ذوقك
                         </div>
                         <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">
@@ -544,7 +537,7 @@
                             إذا كنت ترغب في الحصول على رتبة خاصة بك، أو تصميم باقة إعلانية وتفاعلية مخصصة غير متوفرة بالقائمة، يمكنك إرسال طلبك وحفظه مباشرة في قاعدة البيانات.
                         </p>
 
-                        <button onclick="openOrderModal('طلب مخصص جديد (Custom Package)', 0, 'custom')" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-discord hover:brightness-110 text-white font-bold text-sm shadow-neon-purple transition-all flex items-center gap-2">
+                        <button onclick="openOrderModal('طلب مخصص جديد (Custom Package)', 0, 'custom')" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-discord hover:brightness-110 text-white font-bold text-sm shadow-neon-emerald transition-all flex items-center gap-2">
                             <i class="fa-solid fa-paper-plane"></i> إرسال طلب مخصص جديد
                         </button>
                     </div>
@@ -602,7 +595,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl bg-discord flex items-center justify-center text-white text-xl font-bold">
-                    <i class="fa-brands fa-discord"></i>
+                    <img src="/logo.gif" alt="شعار المتجر" class="w-full h-full object-contain rounded-xl">
                 </div>
                 <div>
                     <span class="text-base font-bold text-white block">متجر الديسكورد الرسمي</span>
@@ -620,7 +613,7 @@
 
     <!-- Auth Modal (Email & Password Authentication) -->
     <div id="authModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden">
-        <div class="glass-panel w-full max-w-md rounded-3xl p-6 sm:p-8 border-discord/30 relative shadow-neon-purple">
+        <div class="glass-panel w-full max-w-md rounded-3xl p-6 sm:p-8 border-discord/30 relative shadow-neon-emerald">
             
             <button onclick="closeAuthModal()" class="absolute top-5 left-5 w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white flex items-center justify-center transition-colors">
                 <i class="fa-solid fa-xmark"></i>
@@ -650,7 +643,7 @@
                 <div id="authErrorMsg" class="hidden p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs text-center font-bold">
                 </div>
 
-                <button id="authSubmitBtn" onclick="handleAuthSubmit()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-discord to-brand-purple hover:brightness-110 text-white font-bold text-sm shadow-neon-purple transition-all flex items-center justify-center gap-2">
+                <button id="authSubmitBtn" onclick="handleAuthSubmit()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-discord to-emerald-500 hover:brightness-110 text-white font-bold text-sm shadow-neon-emerald transition-all flex items-center justify-center gap-2">
                     <i class="fa-solid fa-right-to-bracket"></i>
                     <span id="authSubmitText">تسجيل الدخول</span>
                 </button>
@@ -731,7 +724,7 @@
                     <textarea id="orderNotes" rows="2" placeholder="أين ترغب بنشر إعلانك؟ أو أي تفاصيل تخص رتبتك..." class="w-full px-4 py-2.5 rounded-xl bg-gray-900 border border-gray-700 text-white text-sm focus:outline-none focus:border-discord"></textarea>
                 </div>
 
-                <button onclick="goToPaymentStep()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-discord to-brand-purple hover:brightness-110 text-white font-bold text-sm shadow-neon-purple transition-all flex items-center justify-center gap-2">
+                <button onclick="goToPaymentStep()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-discord to-emerald-500 hover:brightness-110 text-white font-bold text-sm shadow-neon-emerald transition-all flex items-center justify-center gap-2">
                     <span>الانتقال إلى تفاصيل الدفع</span>
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
@@ -777,9 +770,9 @@
                     <p class="text-xs text-gray-400 mt-1">تم توليد وحفظ كود الخدمة بقاعدة البيانات. يمكنك الفحص فوراً بواسطة أداة فحص الأكواد أو إرساله بالتذكرة.</p>
                 </div>
 
-                <div class="p-4 rounded-xl bg-black border border-emerald-500/30 relative group shadow-neon-purple">
+                <div class="p-4 rounded-xl bg-black border border-emerald-500/30 relative group shadow-neon-emerald">
                     <pre id="payloadBox" class="text-xs text-emerald-400 font-mono whitespace-pre-wrap leading-relaxed select-all"></pre>
-                    <button onclick="copyPayload()" class="absolute top-3 left-3 px-3.5 py-1.5 bg-gradient-to-r from-discord to-brand-purple text-white text-xs rounded-lg font-bold hover:brightness-110 shadow-md transition-all">
+                    <button onclick="copyPayload()" class="absolute top-3 left-3 px-3.5 py-1.5 bg-gradient-to-r from-discord to-emerald-500 text-white text-xs rounded-lg font-bold hover:brightness-110 shadow-md transition-all">
                         <i class="fa-solid fa-copy ml-1"></i> نسخ النص
                     </button>
                 </div>
@@ -832,8 +825,6 @@
   messagingSenderId: "897501128705",
   appId: "1:897501128705:web:9d258a32d34b7b9636f800"
 };
-        // 🔔 اختياري: إرسال إشعار فوري لروم الإدارة بالديسكورد عبر الويبهوك عند الشراء
-        window.DISCORD_WEBHOOK_URL = ""; // ضع رابط Webhook الخاص بسيرفرك هنا
 
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'discord-store-default';
 
@@ -890,17 +881,16 @@
       await createUserWithEmailAndPassword(auth, email, password);
       window.showToast("تم إنشاء الحساب بنجاح!");
 
-      // إرسال إشعار إلى ديسكورد عند إنشاء حساب جديد
-      if (window.WEBHOOK_URL) {
-        await fetch(window.WEBHOOK_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            content: `🎉 **تم تسجيل حساب جديد في المتجر!**\n📧 البريد: \`${email}\``
-          })
-        }).catch(err => console.error("Webhook Error:", err));
-      }
-    }
+     // إرسال إشعار إلى ديسكورد عند إنشاء حساب جديد
+await fetch('/api/discord-webhook', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        content: `🎉 **تم تسجيل حساب جديد في المتجر!**\n📧 البريد: \`${email}\``
+    })
+}).catch(err => console.error("Webhook Error:", err));
+      
+}
 
     window.closeAuthModal();
   } catch (err) {
@@ -944,23 +934,21 @@ window.saveOrderToFirestore = async function(orderData) {
     });
 
     // 2. إرسال إشعار الطلب إلى ديسكورد فوراً
-    if (window.WEBHOOK_URL) {
-      await fetch(window.WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          embeds: [{
-            title: "🛒 طلب جديد في المتجر!",
+   await fetch('/api/discord-webhook', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        embeds: [{
+            title: "🛒 طلب جديد في المتجر",
             color: 5814783,
             fields: [
-              { name: "🔑 كود الطلب", value: `\`${orderData.orderCode || 'غير محدد'}\``, inline: true },
-              { name: "🎮 ديسكورد", value: orderData.discordUser || "غير محدد", inline: true },
-              { name: "📦 المنتج", value: orderData.itemTitle || "منتج", inline: true }
+                { name: "🔑 كود الطلب", value: `\`${orderData.orderCode || 'غير محدد'}\``, inline: true },
+                { name: "👤 مستخدم ديسكورد", value: orderData.discordUser || 'غير محدد', inline: true },
+                { name: "📦 المنتج", value: orderData.itemTitle || 'منتج', inline: true }
             ]
-          }]
-        })
-      }).catch(err => console.error("Discord Order Webhook Error:", err));
-    }
+        }]
+    })
+}).catch(err => console.error("Discord Order Webhook Error:", err));
   } catch (err) {
     console.error("Error saving order:", err);
   }
